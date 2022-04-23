@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>HELPHUB</h1>
+    <h2>Кабінет волонтера</h2>
+    <button id="open-btn">+ Додати послугу</button>
+    <a href="index.html">Вихід</a>
+
+    <div style="margin-top: 30px;">
+
+    <table border="1">
+        <tr>
+          <td>Дата</td>
+          <td>Категорія</td>
+          <td>Опис</td>
+          <td>Місто</td>
+          <td>Район</td>
+          <td>Очикування</td>
+          <td>Видхилено</td>
+          <td>В роботі</td>
+          <td>Виконано</td>
+          <td>---</td>
+        </tr>
+        <tr>
+          <td>2022-04-22</td>
+          <td>Авто</td>
+          <td>Бус до Полтави 6 осіб</td>
+          <td>Харків</td>
+          <td>Слобідський</td>
+          <td><a href="#" onclick="alert(`
+          Петренко Петр Петрович ppp@ppp.com +380671112233\n
+          Петренко Петр Петрович ppp@ppp.com +380671112233\n
+          `)">2</a></td>
+          <td>0</td>
+          <td><a href="#">1</a></td>
+          <td>0</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>2022-04-22</td>
+          <td>Авто</td>
+          <td>Бус до Полтави 6 осіб - 2</td>
+          <td>Харків</td>
+          <td>Слобідський</td>
+          <td>0</td>
+          <td><a href="#">1</a></td>
+          <td>0</td>
+          <td><a href="#">3</a></td>
+          <td><button>Видалити</button></td>
+        </tr>
+        <tr>
+          <td>2022-04-20</td>
+          <td>Медицина</td>
+          <td>Ліки</td>
+          <td>Харків</td>
+          <td>Слобідський</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td><button>Видалити</button></td>
+        </tr>
+    </table>
+
+
+  <div id="modal-background">
+    <div id="modal">
+      <span id="close-btn">&times;</span>
+      <h3>Нова послуга</h3>
+      <div>
+        Категорія<br>
+        <select>
+          <option>---</option>
+          <option>Авто</option>
+          <option>Медицина</option>
+          <option>Їжа</option>
+          <option>Тварини</option>
+          <option>Інше</option>
+        </select>
+      </div>
+      <div>
+        Опис<br>
+        <textarea rows="4" cols="30"></textarea>
+      </div>
+      <div>
+        Місто<br>
+        <select>
+          <option>---</option>
+          <option>Київ</option>
+          <option>Харків</option>
+          <option>Одеса</option>
+          <option>Полтава</option>
+          <option>Луцьк</option>
+          <option>Вінниця</option>
+          <option>Дніпро</option>
+          <option>Львів</option>
+        </select>
+      </div>
+      <div>
+        Район<br>
+        <input>
+      </div>
+      <div class="buttons" style="margin-top: 30px;">
+        <button class="yes">
+          Додати
+        </button>
+        <button class="no" onclick="modalBackground.style.display='none';">
+          Скасувати
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-background">
+    <div id="modal">
+      <span id="close-btn">&times;</span>
+      <h3>Замовники</h3>
+      <div>
+        Категорія<br>
+        <select>
+          <option>---</option>
+          <option>Авто</option>
+          <option>Медицина</option>
+          <option>Їжа</option>
+          <option>Тварини</option>
+          <option>Інше</option>
+        </select>
+      </div>
+      <div>
+        Опис<br>
+        <textarea rows="4" cols="30"></textarea>
+      </div>
+      <div>
+        Місто<br>
+        <select>
+          <option>---</option>
+          <option>Київ</option>
+          <option>Харків</option>
+          <option>Одеса</option>
+          <option>Полтава</option>
+          <option>Луцьк</option>
+          <option>Вінниця</option>
+          <option>Дніпро</option>
+          <option>Львів</option>
+        </select>
+      </div>
+      <div>
+        Район<br>
+        <input>
+      </div>
+      <div class="buttons" style="margin-top: 30px;">
+        <button class="yes">
+          Додати
+        </button>
+        <button class="no" onclick="modalBackground.style.display='none';">
+          Скасувати
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="modal.js"></script>
+  </body>
+</html>

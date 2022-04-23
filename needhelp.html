@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>HELPHUB</h1>
+    <a href="index.html">Головна сторінка</a>
+
+    <h2>Замовити послугу</h2>
+
+    <div style="margin-top: 30px;">
+      <div>
+          Категорія:
+          <select>
+            <option>---</option>
+            <option>Авто</option>
+            <option>Медицина</option>
+            <option>Їжа</option>
+            <option>Тварини</option>
+            <option>Інше</option>
+          </select>
+          &nbsp;|&nbsp;
+          Місто:
+          <select>
+            <option>---</option>
+            <option>Київ</option>
+            <option>Харків</option>
+            <option>Одеса</option>
+            <option>Полтава</option>
+            <option>Луцьк</option>
+            <option>Вінниця</option>
+            <option>Дніпро</option>
+            <option>Львів</option>
+          </select><br><br>
+          Район: <input>
+          &nbsp;|&nbsp;
+          Опис: <input>
+          <button>Шукати</button>
+          <button>Скасувати пошук</button>
+      </div>
+      <div style="margin-top: 30px;"></div>
+
+    <table border="1">
+        <tr>
+          <td>Дата</td>
+          <td>Категорія</td>
+          <td>Опис</td>
+          <td>Місто</td>
+          <td>Район</td>
+          <td>---</td>
+        </tr>
+        <tr>
+          <td>2022-04-22</td>
+          <td>Авто</td>
+          <td>Бус до Полтави 6 осіб</td>
+          <td>Харків</td>
+          <td>Слобідський</td>
+          <td><button id="open-btn">Замовити</button></td>
+        </tr>
+        <tr>
+          <td>2022-04-22</td>
+          <td>Авто</td>
+          <td>Бус до Полтави 6 осіб - 2</td>
+          <td>Харків</td>
+          <td>Слобідський</td>
+          <td><button id="open-btn">Замовити</button></td>
+        </tr>
+        <tr>
+          <td>2022-04-20</td>
+          <td>Медицина</td>
+          <td>Ліки</td>
+          <td>Харків</td>
+          <td>Слобідський</td>
+          <td><button id="open-btn">Замовити</button></td>
+        </tr>
+    </table>
+
+
+  <!-- Modal Background and Modal -->
+  <div id="modal-background">
+    <div id="modal">
+      <span id="close-btn">&times;</span>
+      ПІБ <input><br>
+      Email <input><br>
+      Телефон <input>
+      <div class="buttons">
+        <button class="yes" onclick="document.location.href='needhelp.html'; alert(`Якщо волонтер погодиться виконати ваше замовлення від зв'яжеться з вами за наданними координатами`)">
+          Підтверджую
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="modal.js"></script>
+  </body>
+</html>
